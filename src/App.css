@@ -1,0 +1,118 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  /* height: 60vh; */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.form-field label.inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+  margin-top: 0.4rem;
+  color: #555;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-data {
+  /* margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e1e1; */
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-data h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.form-data p {
+  margin: 0.7rem 0;
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  /* margin: 0.5rem 0;
+  color: #444;
+  font-size: 0.95rem; */
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.form-data p:last-child {
+  border-bottom: none;
+}
